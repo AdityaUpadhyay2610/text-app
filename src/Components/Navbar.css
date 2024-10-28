@@ -1,0 +1,96 @@
+/* General styles for body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Navbar styles */
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  color: white; /* Default text color */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the navbar */
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: rgb(129, 129, 237);
+  border: none;
+  border-radius: 10px;
+  width: 125px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position absolutely to overlay */
+  background-color: rgba(27, 24, 24, 0.9); /* Dark semi-transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  z-index: 1; /* Ensure it appears above other content */
+  min-width: 160px; /* Minimum width for dropdown */
+}
+.dropdown-content a{
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-right: 10px;
+}
+
+/* Show dropdown on button click */
+.dropdown-content {
+  display: block; /* Show dropdown when active */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+      padding: 10px; /* Adjust padding */
+  }
+
+  .nav-links {
+      display: none; /* Hide desktop dark mode toggle on mobile */
+  }
+
+  .dropdown-content {
+      position: absolute; /* Keep dropdown absolutely positioned */
+      width: 100%; /* Full width for mobile */
+      left: 0; /* Align to the left */
+      top: 100%; /* Position it below the button */
+  }
+
+  .dropdown-content a {
+      text-align: center; /* Center align links */
+  }
+}

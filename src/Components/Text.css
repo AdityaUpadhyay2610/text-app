@@ -1,0 +1,28 @@
+
+.container{
+    margin-top: 30px;
+}
+.contrainer.my-4 {
+    margin-left: 140px;
+}
+.container {
+    margin-top: 30px;
+}
+
+.contrainer.my-4 {
+    margin-left: 140px; /* Default for larger screens */
+}
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .contrainer.my-4 {
+        margin-left: 20px; /* Adjust the margin for tablets */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .contrainer.my-4 {
+        margin-left: 10px; /* Further adjust the margin for mobile */
+    }
+}

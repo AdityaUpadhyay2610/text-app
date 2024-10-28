@@ -1,0 +1,92 @@
+.calc h2 {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+.border-content {
+    width: 80%; /* Set the width to 80% of the parent container */
+    max-width: 400px; /* Optional: Set a maximum width for larger screens */
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 15px; /* Increased rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for a lifted effect */
+    padding: 20px; /* Add padding for inner spacing */
+    margin: 15px auto; /* Center the card with automatic left and right margins */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.border-content:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+form {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px;
+    padding: 5px;
+    display: flex;
+}
+.btn2 {
+    text-transform: none;
+    border: 2px transparent;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    margin-left: 73px;
+    background-color: cornflowerblue;
+    padding: 8px;
+    font-style: italic;
+    font-weight: bolder;
+}
+input.weight-input ,  input.height-input {
+
+    padding: 2px;
+    border: 2px solid orange;
+    margin: 6px;
+    text-align: center;
+    border-radius: 5px;
+}
+.intro {
+    justify-content: center;
+    max-width: 695px;
+    /* display: flex; */
+    align-items: center;
+    margin: 5px;
+    flex-direction: column;
+    padding: 13px;
+}
+h2.intro-head{
+    font-size: 34px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: underline;
+
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: math;
+    font-weight: bolder;
+}
+@media (max-width:768px){
+    h2.intro-head {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: underline;
+        font-family: fangsong;
+    }
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}

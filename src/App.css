@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* App.css */
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+h1,h2,p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+textarea,div,label,button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+@media (max-width: 768px){
+  h1{
+    font-size: 25px;
+  }
+}
+
+
+
+/* Add more styles as needed */
