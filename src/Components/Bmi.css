@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin: 8px;
+    margin-top: 60px;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
@@ -15,9 +16,7 @@
     border-radius: 15px; /* Increased rounded corners */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for a lifted effect */
     padding: 20px; /* Add padding for inner spacing */
-    margin: 15px auto; /* Center the card with automatic left and right margins */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-}
+    margin: 15px auto; /* Center the card with automatic left and right margins */}
 
 form {
     align-items: center;
@@ -95,6 +94,9 @@ h2.intro-head,.formula h2 {
     font-weight: bolder;
 }
 @media (max-width:768px){
+    .calc{
+        margin-top: 80px;
+    }
     h2.intro-head {
         display: flex;
         justify-content: flex-start;
