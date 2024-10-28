@@ -53,16 +53,17 @@ input.weight-input ,  input.height-input {
     text-align: center;
     border-radius: 5px;
 }
-.intro {
+.intro,.formula {
     justify-content: center;
-    max-width: 695px;
+    max-width: 1055px;
+    width: 90%;
     /* display: flex; */
     align-items: center;
-    margin: 5px;
+    margin: 15px auto;
     flex-direction: column;
     padding: 13px;
 }
-h2.intro-head{
+h2.intro-head,.formula h2 {
     font-size: 34px;
     display: flex;
     justify-content: flex-start;
@@ -70,6 +71,25 @@ h2.intro-head{
     text-decoration: underline;
 
 }
+.formula {
+    padding: 20px; /* Some padding */ /* Rounded corners */
+  }
+  
+  .formula h2 {
+    margin-bottom: 10px;
+  }
+  
+  .formula h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .formula pre {
+    background-color: #e8e8e8; /* Slightly darker background for preformatted text */
+    padding: 10px;
+    border-radius: 3px;
+    overflow-x: auto; /* Allow horizontal scrolling if text overflows */
+  }
 .result {
     display: flex;
     justify-content: center;

@@ -82,6 +82,24 @@ const Bmi = (props) => {
           <h2 className='intro-head'> BMI introduction</h2>
           <p> BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
         </div>
+        <div className="formula">
+          <h2>BMI Formula</h2>
+          <p>Below are the equations used for calculating BMI in the International System of Units (SI) and the US customary system (USC) using a 5'10", 160-pound individual as an example:</p>
+  
+          <h3>USC Units:</h3>
+          <pre>
+            BMI = 703 × (mass (lbs) / height² (in))
+            = 703 × (160 / 70²)
+            = 23.0
+          </pre>
+
+            <h3>SI, Metric Units:</h3>
+            <pre>
+              BMI = mass (kg) / height² (m)
+                = 72.57 / (1.778²)
+                = 23.0
+            </pre>
+</div>
       </div>
     </>
   );
