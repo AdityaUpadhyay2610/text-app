@@ -19,10 +19,6 @@
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
 
-.border-content:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-}
 form {
     align-items: center;
     flex-direction: column;
