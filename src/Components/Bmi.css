@@ -97,6 +97,10 @@ h2.intro-head,.formula h2 {
     .calc{
         margin-top: 80px;
     }
+    .border-content{
+        backdrop-filter: none;
+        box-shadow: none; 
+    }
     h2.intro-head {
         display: flex;
         justify-content: flex-start;
