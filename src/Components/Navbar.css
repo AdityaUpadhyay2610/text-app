@@ -52,7 +52,7 @@ nav {
   backdrop-filter: blur(10px); /* Frosted glass effect */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-  z-index: 1; /* Ensure it appears above other content */
+  z-index: 10; /* Ensure it appears above other content */
   min-width: 160px; /* Minimum width for dropdown */
 }
 .dropdown-content a{
@@ -76,7 +76,9 @@ nav {
 /* Responsive styles */
 @media (max-width: 768px) {
   nav {
-      padding: 10px; /* Adjust padding */
+      padding: 10px; 
+     
+    /* Adjust padding */
   }
 
   .nav-links {
@@ -87,7 +89,9 @@ nav {
       position: absolute; /* Keep dropdown absolutely positioned */
       width: 100%; /* Full width for mobile */
       left: 0; /* Align to the left */
-      top: 100%; /* Position it below the button */
+      top: 100%;
+      z-index: 10;
+     /* Position it below the button */
   }
 
   .dropdown-content a {

@@ -15,14 +15,8 @@
     border-radius: 15px; /* Increased rounded corners */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for a lifted effect */
     padding: 20px; /* Add padding for inner spacing */
-    margin: 15px auto; /* Center the card with automatic left and right margins */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-}
+    margin: 15px auto; /* Center the card with automatic left and right margins */}
 
-.border-content:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-}
 form {
     align-items: center;
     flex-direction: column;
@@ -99,6 +93,13 @@ h2.intro-head,.formula h2 {
     font-weight: bolder;
 }
 @media (max-width:768px){
+    .calc{
+        margin-top: 80px;
+    }
+    .border-content{
+        backdrop-filter: none;
+        box-shadow: none; 
+    }
     h2.intro-head {
         display: flex;
         justify-content: flex-start;
