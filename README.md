@@ -17,7 +17,7 @@ The Text Utils App is a versatile tool designed to manipulate text efficiently. 
 To get started with the Text Utils App, clone the repository and open it in your preferred code editor. Follow the instructions below to set it up:
 
 ```bash
-git clone 
+git clone https://github.com/AdityaUpadhyay2610/text-app.git
 cd text-utils-app
 npm install
 npm start
