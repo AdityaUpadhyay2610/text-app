@@ -25,6 +25,7 @@ const Navbar = ({ title, aboutText, mode, toggleMode }) => {
             <Link to="/">Home</Link>
             <Link to="/bmi">BMI Calculator</Link>
             <Link to="/semi">Simple Calculator</Link>
+            <Link to="/faul">Faulty Calculator</Link>
             {/* Dark mode toggle for mobile */}
             <div className="form-check form-switch">
               <input 

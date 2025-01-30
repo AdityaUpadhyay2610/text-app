@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Text from './Components/Text';
 import Bmi from './Components/Bmi';
 import SimpleCalc from './Components/SimpleCalc';
+import FaultyCalc from './Components/FaultyCalc';
 
 function App() {
   const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
@@ -26,6 +27,8 @@ function App() {
       setTitle('BMI Calculator');
     }else if (location.pathname === '/semi'){
       setTitle('Simple Calculator');
+    }else if(location.pathname === '/faul'){
+      setTitle('Faulty Calculator');
     }
   }, [location]);
 
@@ -36,6 +39,7 @@ function App() {
         <Route path="/" element={<Text heading="Enter the text to analyze below" mode={mode} />} />
         <Route path="/bmi" element={<Bmi mode={mode}/>} />
         <Route path="/semi" element={<SimpleCalc mode={mode} />} />
+        <Route path="/faul" element={<FaultyCalc mode={mode} />} />
       </Routes>
     </>
   );
